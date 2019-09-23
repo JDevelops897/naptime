@@ -4,22 +4,244 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_die</sound>
+    <sound>sound\snd_footstep</sound>
+    <sound>sound\snd_rope</sound>
+    <sound>sound\snd_struggle</sound>
+    <sound>sound\mus_lvl</sound>
+    <sound>sound\mus_Menu</sound>
+  </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_button_start</sprite>
-    <sprite>sprites\spr_button_exit</sprite>
+    <sprites name="AI">
+      <sprite>sprites\spr_chung</sprite>
+      <sprite>sprites\spr_cop_idle</sprite>
+      <sprite>sprites\spr_cop_run</sprite>
+      <sprite>sprites\spr_dad</sprite>
+      <sprite>sprites\spr_jack</sprite>
+      <sprite>sprites\spr_kid_fucking_joey</sprite>
+      <sprite>sprites\spr_kid_lucas</sprite>
+      <sprite>sprites\spr_kid_lucasWalk</sprite>
+      <sprite>sprites\spr_kid_maryanne</sprite>
+      <sprite>sprites\spr_kid_maryanneWalk</sprite>
+      <sprite>sprites\spr_kid_vanessa</sprite>
+      <sprite>sprites\spr_kid_vanessaWalk</sprite>
+      <sprite>sprites\spr_lauren</sprite>
+      <sprite>sprites\spr_mom</sprite>
+      <sprite>sprites\spr_nakedman</sprite>
+      <sprite>sprites\spr_owen</sprite>
+      <sprite>sprites\spr_sac</sprite>
+      <sprite>sprites\spr_sacSleep</sprite>
+      <sprite>sprites\spr_kidGhost</sprite>
+      <sprite>sprites\spr_patooty</sprite>
+      <sprite>sprites\spr_cop_lady</sprite>
+      <sprite>sprites\spr_jackWalk</sprite>
+      <sprite>sprites\spr_laurenWalk</sprite>
+      <sprite>sprites\spr_owenWalk</sprite>
+    </sprites>
+    <sprites name="Character">
+      <sprite>sprites\spr_candy</sprite>
+      <sprite>sprites\spr_costume_clown</sprite>
+      <sprite>sprites\spr_costume_clown_walk</sprite>
+      <sprite>sprites\spr_costume_ghost</sprite>
+      <sprite>sprites\spr_costume_ghostWalk</sprite>
+      <sprite>sprites\spr_ui</sprite>
+      <sprite>sprites\spr_chloroform</sprite>
+      <sprite>sprites\spr_ui_box</sprite>
+      <sprite>sprites\spr_costume_serial_walk</sprite>
+      <sprite>sprites\spr_costume_serial</sprite>
+    </sprites>
+    <sprites name="CutScene">
+      <sprite>sprites\spr_cutsceneChar1</sprite>
+      <sprite>sprites\spr_cutsceneChar2</sprite>
+      <sprite>sprites\spr_cutsceneBack1</sprite>
+    </sprites>
+    <sprites name="Environment">
+      <sprite>sprites\spr_altar</sprite>
+      <sprite>sprites\spr_bat</sprite>
+      <sprite>sprites\spr_bone</sprite>
+      <sprite>sprites\spr_bush</sprite>
+      <sprite>sprites\spr_candybag</sprite>
+      <sprite>sprites\spr_car</sprite>
+      <sprite>sprites\spr_car_police</sprite>
+      <sprite>sprites\spr_dirt</sprite>
+      <sprite>sprites\spr_driveway</sprite>
+      <sprite>sprites\spr_dumpster</sprite>
+      <sprite>sprites\spr_ghost</sprite>
+      <sprite>sprites\spr_grass</sprite>
+      <sprite>sprites\spr_grassTransition</sprite>
+      <sprite>sprites\spr_house</sprite>
+      <sprite>sprites\spr_house_back</sprite>
+      <sprite>sprites\spr_house_better</sprite>
+      <sprite>sprites\spr_house_final</sprite>
+      <sprite>sprites\spr_house_player</sprite>
+      <sprite>sprites\spr_house_side</sprite>
+      <sprite>sprites\spr_manhole</sprite>
+      <sprite>sprites\spr_road</sprite>
+      <sprite>sprites\spr_roadblock</sprite>
+      <sprite>sprites\spr_rope</sprite>
+      <sprite>sprites\spr_sans</sprite>
+      <sprite>sprites\spr_sidewalk</sprite>
+      <sprite>sprites\spr_sidewalk_corner</sprite>
+      <sprite>sprites\spr_stump</sprite>
+      <sprite>sprites\spr_tombstone</sprite>
+      <sprite>sprites\spr_tree</sprite>
+      <sprite>sprites\spr_zombiehand</sprite>
+      <sprite>sprites\spr_jackolantern</sprite>
+      <sprite>sprites\spr_candle</sprite>
+    </sprites>
+    <sprites name="Menu">
+      <sprite>sprites\spr_button_back</sprite>
+      <sprite>sprites\spr_button_credits</sprite>
+      <sprite>sprites\spr_button_exit</sprite>
+      <sprite>sprites\spr_button_exit_final</sprite>
+      <sprite>sprites\spr_button_start</sprite>
+      <sprite>sprites\spr_button_start_final</sprite>
+      <sprite>sprites\spr_Title</sprite>
+      <sprite>sprites\spr_light</sprite>
+      <sprite>sprites\spr_alex</sprite>
+      <sprite>sprites\spr_joey</sprite>
+      <sprite>sprites\spr_jordan</sprite>
+      <sprite>sprites\spr_josue</sprite>
+      <sprite>sprites\spr_natalie</sprite>
+      <sprite>sprites\spr_sydney</sprite>
+      <sprite>sprites\spr_v</sprite>
+    </sprites>
+    <sprite>sprites\spr_blood</sprite>
+    <sprite>sprites\spr_eye</sprite>
+    <sprite>sprites\spr_poof</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\Street_Gravel</background>
+    <background>background\bkg_Grass</background>
+    <background>background\bkg_menu</background>
+    <background>background\bkg_credits</background>
+    <background>background\bkg_win</background>
+    <background>background\bk_lose</background>
+  </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
+  <scripts name="scripts">
+    <script>scripts\TODO.gml</script>
+    <script>scripts\AI_LAYOUT.gml</script>
+    <script>scripts\scr_game_init.gml</script>
+    <scripts name="CBNA SmartLight 1.3.2 GMS [EN]">
+      <script>scripts\SL_ToD_default.gml</script>
+      <script>scripts\SL_engine_ini_begin.gml</script>
+      <script>scripts\SL_engine_ini_end.gml</script>
+      <script>scripts\SL_engine_render.gml</script>
+      <script>scripts\SL_engine_draw.gml</script>
+      <script>scripts\SL_engine_free.gml</script>
+      <script>scripts\SL_light_ini_begin.gml</script>
+      <script>scripts\SL_light_ini_end.gml</script>
+      <script>scripts\SL_light_free.gml</script>
+      <script>scripts\SL_light_cast_obj.gml</script>
+      <script>scripts\SL_global_cast_obj.gml</script>
+      <script>scripts\SL_cast_sprite.gml</script>
+      <script>scripts\SL_add_light.gml</script>
+      <script>scripts\SL_draw_sprite_light.gml</script>
+      <script>scripts\SL_draw_sprite_shadow.gml</script>
+      <script>scripts\SL_sprite_set_ambient.gml</script>
+      <script>scripts\SL_set_time.gml</script>
+    </scripts>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_cutscene</font>
+  </fonts>
   <objects name="objects">
-    <object>objects\obj_button_start</object>
-    <object>objects\obj_button_exit</object>
+    <objects name="AI">
+      <object>objects\obj_chung</object>
+      <object>objects\obj_cop</object>
+      <object>objects\obj_dad</object>
+      <object>objects\obj_jack</object>
+      <object>objects\obj_kid</object>
+      <object>objects\obj_kid_fucking_joey</object>
+      <object>objects\obj_kid_lucas</object>
+      <object>objects\obj_kid_maryanne</object>
+      <object>objects\obj_kid_vanessa</object>
+      <object>objects\obj_lauren</object>
+      <object>objects\obj_mom</object>
+      <object>objects\obj_parentparent</object>
+      <object>objects\obj_teenParent</object>
+      <object>objects\obj_nakedman</object>
+      <object>objects\obj_owen</object>
+      <object>objects\obj_sac</object>
+      <object>objects\obj_kidGhost</object>
+      <object>objects\obj_patooty</object>
+    </objects>
+    <objects name="Character">
+      <object>objects\obj_player</object>
+    </objects>
+    <objects name="Environment">
+      <object>objects\obj_altar</object>
+      <object>objects\obj_bat</object>
+      <object>objects\obj_bone</object>
+      <object>objects\obj_bush</object>
+      <object>objects\obj_candybag</object>
+      <object>objects\obj_car</object>
+      <object>objects\obj_car_police</object>
+      <object>objects\obj_dirt</object>
+      <object>objects\obj_driveway</object>
+      <object>objects\obj_dumpster</object>
+      <object>objects\obj_ghost</object>
+      <object>objects\obj_grass</object>
+      <object>objects\obj_grassTransition</object>
+      <object>objects\obj_house</object>
+      <object>objects\obj_house_back</object>
+      <object>objects\obj_culledBottom</object>
+      <object>objects\obj_house_player</object>
+      <object>objects\obj_house_side</object>
+      <object>objects\obj_manhole</object>
+      <object>objects\obj_road</object>
+      <object>objects\obj_roadblock</object>
+      <object>objects\obj_sans</object>
+      <object>objects\obj_sidewalk</object>
+      <object>objects\obj_sidewalk_corner</object>
+      <object>objects\obj_stump</object>
+      <object>objects\obj_tombstone</object>
+      <object>objects\obj_tree</object>
+      <object>objects\obj_zombiehand</object>
+      <object>objects\obj_jackolantern</object>
+      <object>objects\obj_bloodEmitter</object>
+    </objects>
+    <objects name="Menu">
+      <object>objects\obj_button_back</object>
+      <object>objects\obj_button_credits</object>
+      <object>objects\obj_button_exit</object>
+      <object>objects\obj_button_start</object>
+      <object>objects\obj_Title</object>
+      <object>objects\obj_alex</object>
+      <object>objects\obj_joey</object>
+      <object>objects\obj_jordan</object>
+      <object>objects\obj_josue</object>
+      <object>objects\obj_sydney</object>
+      <object>objects\obj_natalie</object>
+      <object>objects\obj_v</object>
+    </objects>
+    <objects name="Other">
+      <object>objects\obj_camController</object>
+      <object>objects\obj_control</object>
+      <object>objects\obj_cutsceneController</object>
+      <object>objects\obj_fadeToRoom</object>
+      <object>objects\obj_interactable</object>
+      <object>objects\obj_roomTransition</object>
+    </objects>
+    <object>objects\obj_light</object>
+    <object>objects\obj_policeLight</object>
+    <object>objects\obj_castParent</object>
+    <object>objects\obj_dialogue</object>
+    <object>objects\obj_tutorial</object>
+    <object>objects\obj_blood</object>
+    <object>objects\obj_candy</object>
+    <object>objects\obj_poof</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
-    <room>rooms\room_test</room>
-    <room>rooms\room_tutorial</room>
+    <room>rooms\room_cutscene</room>
+    <room>rooms\room_levelTransition</room>
+    <room>rooms\room_win</room>
+    <room>rooms\room_lose</room>
+    <room>rooms\room_level1</room>
+    <room>rooms\room_credits</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
